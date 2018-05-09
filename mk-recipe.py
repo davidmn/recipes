@@ -36,7 +36,8 @@ with open(templatePath) as file :
   fileData = file.read()
 
 fileData = fileData.replace('$name', args.name)
-fileData = fileData.replace('$serves', args.serves)
+if args.serves:
+    fileData = fileData.replace('$serves', args.serves)
 
 with open(outputPath, 'w+') as file:
   file.write(fileData)

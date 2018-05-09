@@ -11,10 +11,15 @@ class RecipeTests(unittest.TestCase):
     def test_has_method(self):
         self.iterate_over_files(self.has_method)
 
+    def test_has_ingredients(self):
+        self.iterate_over_files(self.has_ingredients)
+
     # implmentation of tests
     def has_method(self, file):
-        full_text = file.readlines()
-        self.assertTrue('## Method\n' in full_text, "File {} does not contain a method".format(file.name))
+        self.does_file_contain_string(file, "## Method\n")
+
+    def has_ingredients(self, file):
+        self.does_file_contain_string(file, "## Ingredients\n")
 
     def title_matches_file_name(self, file):
         first_line = firstLine = file.readline().rstrip()
@@ -28,7 +33,7 @@ class RecipeTests(unittest.TestCase):
         print(firstLine)
         self.assertTrue(firstLine.startswith('# '), 'Title in file {} did not start with h1'.format(f.name))
 
-    # helper function to iterate over all our recipe files
+    # helper functions
     def iterate_over_files(self, test_assertion):
         directories = ['main','dessert','breakfast']
         for directory in directories:
@@ -38,6 +43,9 @@ class RecipeTests(unittest.TestCase):
                 with open(path) as f :
                     test_assertion(f)
 
+    def does_file_contain_string(self, file, string):
+        full_text = file.readlines()
+        self.assertTrue(string in full_text, "File {} does not contain {}".format(file.name, string))
 
 if __name__ == '__main__':
     unittest.main()

@@ -11,7 +11,7 @@
  - worcestershire sauce
  - light soy sauce
 
-## Methods
+## Method
  - equal amounts ketchup and oyster sauce (about a table spoon of each)
  - lots of soy sauce to make the volume
  - a splash of wine, vinegar, worcestershire

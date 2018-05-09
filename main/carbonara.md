@@ -11,7 +11,7 @@
  - onion (optional)
  - mushroom (optional)
 
-## Methods
+## Method
  - bring pan of water to boil and cook pasta for about 10min with some salt
  - meanwhile dice onion and fry with mushrooms and pancetta
  - grate parmesan finely

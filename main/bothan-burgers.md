@@ -13,7 +13,7 @@
  - 1 teaspoon mustard
  - salt and pepper
 
-## Methods
+## Method
  - add everything to a bowl and mix
  - fry/bbq
 

@@ -9,7 +9,7 @@
  - 2 medium eggs
  - 100ml milk
 
-## Methods
+## Method
  - sift flour and sugar into bowl
  - make well in centre and add eggs
  - mix eggs as best you can

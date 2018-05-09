@@ -14,7 +14,7 @@
  - 1 egg
  - 50g chocolate chips
 
-## Methods
+## Method
  - mash bananas
  - cream the butter
  - add sugar to butter

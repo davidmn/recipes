@@ -22,7 +22,7 @@ Icing
 Filling
  - lemon curd
 
-## Methods
+## Method
  - preheat oven to 170C
  - mix flour, sugar, baking powder, lemon zest, butter
  - mix in milk

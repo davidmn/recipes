@@ -9,7 +9,7 @@ should be able to ice a 20cm cake including sides
  - 230g Nutella
  - semi skimmed milk
 
-## Methods
+## Method
  - cream butter in a bowl until spreadable
  - add sugar 1 tablespoon at a time to the butter
  - when all sugar added you should have a paste then add Nutella and mix

@@ -6,7 +6,7 @@ $serves
 ## Ingredients
 
 
-## Methods
+## Method
 
 
 ## Notes

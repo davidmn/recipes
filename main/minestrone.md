@@ -20,7 +20,7 @@
  - 65g pancetta
  - oregano to taste
 
-## Methods
+## Method
  - slice onion, mushrooms, pancetta, sweat in oil for 10-16min with lid on
  - slice courgette, cabbage, garlic
  - make stock with stock cube

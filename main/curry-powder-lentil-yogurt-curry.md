@@ -15,7 +15,7 @@
  - 90g red lentils
  - 25g cashew nuts
 
-## Methods
+## Method
  - fry onions in oil
  - chop garlic and stir into onions with the spices
  - add meat and brown

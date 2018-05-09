@@ -12,7 +12,7 @@
  - 180g risotto rice (arborio rice)
  - 55g parmesan cheese
 
-## Methods
+## Method
  - fry onion in oil and 20g of butter
  - add mushroom and fry for a few min
  - add rice and ensure covered in oil/butter, toast a little

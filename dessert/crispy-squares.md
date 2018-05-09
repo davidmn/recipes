@@ -9,7 +9,7 @@
  - 115g butter
  - 170g rice krispies
 
-## Methods
+## Method
  - melt marshmallows, toffee, butter in a large pan on a low heat
  - take pan off and mix in rice krispies
  - put in tin and slice when cool

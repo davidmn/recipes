@@ -17,7 +17,7 @@
  - 0.5 teaspoon black pepper
  - 0.5 teaspoon cayenne pepper
 
-## Methods
+## Method
  - cut chicken into chunks
  - whack everything else into a bowl and mix
  - add chicken and allow to marinade for 8 hours

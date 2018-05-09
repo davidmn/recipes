@@ -15,7 +15,7 @@ Many
  - 1 teaspoon salt
  - 400g chocolate chips
 
-## Methods
+## Method
  - beat butter and sugar for 2min
  - beat in egg and vanilla extract
  - sift flour, bicarb, baking powder, salt in and mix

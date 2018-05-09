@@ -19,7 +19,7 @@
  - 500g fish (monkfish works really well)
  - fresh coriander
 
-## Methods
+## Method
  - fry onions and mustard seeds on low heat until golden
  - peel and grate ginger, add to pan
  - add remaining spices and fry until until aromatic

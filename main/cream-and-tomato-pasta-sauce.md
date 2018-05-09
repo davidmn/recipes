@@ -13,7 +13,7 @@
  - basil
  - parmesan cheese
 
-## Methods
+## Method
  - fry onion and garlic in oil and butter
  - add chopped tomatoes and puree
  - season

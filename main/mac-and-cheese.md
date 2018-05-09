@@ -17,7 +17,7 @@
  - nutmeg
  - 0.5 stock cube
 
-## Methods
+## Method
  - cook pasta
  - fry onion, bacon, garlic
  - butter, flour, milk in hot pan and whisk until smooth

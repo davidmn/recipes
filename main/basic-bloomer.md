@@ -10,7 +10,7 @@
  - 300-400ml water
  - 40ml olive oil
 
-## Methods
+## Method
  - mix flour, oil, salt, yeast and mix
  - add water until a soft not soggy dough
  - knead a lot

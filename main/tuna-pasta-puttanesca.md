@@ -17,7 +17,7 @@
  - 100g fresh spinach
  - parmesan to serve
 
-## Methods
+## Method
  - fry garlic, chilli, oregano for 2 min
  - add capers, olives, tomatoes and cook for 5 min
  - add tuna, lemon and cook for 10min

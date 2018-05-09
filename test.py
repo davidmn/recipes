@@ -1,21 +1,35 @@
 import unittest, os
 
 class RecipeTests(unittest.TestCase):
-    def test_title_match(self):
+    # methods to make unittest happy
+    def test_has_title(self):
+        self.iterate_over_files(self.has_title)
+
+    def test_title_matches_file_name(self):
+        self.iterate_over_files(self.title_matches_file_name)
+
+    # implmentation of tests
+    def title_matches_file_name(self, file):
+        first_line = firstLine = file.readline().rstrip()
+        expected_file_name = first_line[2:].lower().replace(' ','-') + '.md'
+        print(expected_file_name)
+        actual_file_name = os.path.basename(file.name)
+        self.assertEqual(expected_file_name, actual_file_name, 'File {} does not have expected filename {}'.format(file.name,expected_file_name))
+
+    def has_title(self, f):
+        firstLine = f.readline().rstrip()
+        print(firstLine)
+        self.assertTrue(firstLine.startswith('# '), 'Title in file {} did not start with h1'.format(f.name))
+
+    # helper function to iterate over all our recipe files
+    def iterate_over_files(self, test_assertion):
         directories = ['main','dessert','breakfast']
         for directory in directories:
             files = os.listdir(directory)
             for file in files:
                 path = directory + "/" + file
                 with open(path) as f :
-                    firstLine = f.readline().rstrip()
-                    print firstLine
-                    self.assertTrue(firstLine.startswith('# '), 'Title in file {} did not start with h1'.format(path))
-                    expectedFilename = firstLine[2:].lower().replace(' ','-') + '.md'
-                    print expectedFilename
-                    print file
-                    self.assertEqual(expectedFilename, file, 'File {} does not have expected filename {}'.format(file,expectedFilename))
-
+                    test_assertion(f)
 
 
 if __name__ == '__main__':

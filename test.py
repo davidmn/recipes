@@ -8,7 +8,14 @@ class RecipeTests(unittest.TestCase):
     def test_title_matches_file_name(self):
         self.iterate_over_files(self.title_matches_file_name)
 
+    def test_has_method(self):
+        self.iterate_over_files(self.has_method)
+
     # implmentation of tests
+    def has_method(self, file):
+        full_text = file.readlines()
+        self.assertTrue('## Method\n' in full_text, "File {} does not contain a method".format(file.name))
+
     def title_matches_file_name(self, file):
         first_line = firstLine = file.readline().rstrip()
         expected_file_name = first_line[2:].lower().replace(' ','-') + '.md'

@@ -18,7 +18,11 @@
  - 0.5 teaspoon cayenne pepper
 
 ## Methods
-
+ - cut chicken into chunks
+ - whack everything else into a bowl and mix
+ - add chicken and allow to marinade for 8 hours
+ - put chicken on skewers
+ - grill at 200C about 10min on each side
 
 ## Notes
 n/a

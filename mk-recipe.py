@@ -38,6 +38,8 @@ with open(templatePath) as file :
 fileData = fileData.replace('$name', args.name)
 if args.serves:
     fileData = fileData.replace('$serves', args.serves)
+else:
+    fileData = fileData.replace('$serves', 'n/a')
 
 with open(outputPath, 'w+') as file:
   file.write(fileData)

@@ -3,8 +3,13 @@
 ## organisation
 sorted by meal type currently, as more get added things might group better in another way
 
-## template
-example:
+## usage
+make sure that `mk-recipe.py` is executable then do something like this:
 ```
-cp template.md main/some-new-dish.md
+./mk-recipe.py --name "Tuna Pasta Puttanesca" --type "main" --serves 4
 ```
+that will create file `main/tuna-pasta-puttanesca.md`
+
+name and type are required arguments while serves is optional
+
+it will not overwrite existing files because

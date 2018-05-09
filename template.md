@@ -1,7 +1,7 @@
-# Title
+# $name
 
 ## Serves
-
+$serves
 
 ## Ingredients
 

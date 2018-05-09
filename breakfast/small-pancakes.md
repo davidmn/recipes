@@ -1,4 +1,4 @@
-# Small Breakfast Pancakes
+# Small Pancakes
 
 ## Serves
 10 pancakes

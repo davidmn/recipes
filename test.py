@@ -1,4 +1,5 @@
 import unittest, os
+from subprocess import call
 
 class RecipeTests(unittest.TestCase):
     # methods to make unittest happy
@@ -46,6 +47,30 @@ class RecipeTests(unittest.TestCase):
     def does_file_contain_string(self, file, string):
         full_text = file.readlines()
         self.assertTrue(string in full_text, "File {} does not contain {}".format(file.name, string))
+
+class ScriptTests(unittest.TestCase):
+    def test_run_without_args_fails(self):
+        return_code = call(["python3","./mk-recipe.py"])
+        self.assertEqual(return_code, 1, "Return code was {} when expected 1")
+
+    def test_run_with_wrong_type_fails(self):
+        return_code = call(["python3","./mk-recipe.py", "--name", "test", "--type", "wrong"])
+        self.assertEqual(return_code, 1, "Return code was {} when expected 1")
+
+    def test_creates_file_correctly(self):
+        test_file = "main/test-file-please-ignore.md"
+        if os.path.exists(test_file):
+            os.remove(test_file)
+
+        return_code = call(["python3","./mk-recipe.py", "--name", "Test File Please Ignore", "--type", "main", "--serves", "7734"])
+
+        self.assertEqual(return_code,0, "Return code was {} when expected 0".format(return_code))
+
+        with open(test_file) as file:
+            full_text = file.readlines()
+            self.assertTrue("7734\n" in full_text, "File {} does not contain {}".format(file.name, "7734"))
+
+            self.assertTrue("# Test File Please Ignore\n" in full_text, "File {} does not contain {}".format(file.name, "# Test File Please Ignore"))
 
 if __name__ == '__main__':
     unittest.main()

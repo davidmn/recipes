@@ -18,7 +18,13 @@ class RecipeTests(unittest.TestCase):
     def test_method_non_zero(self):
         self.iterate_over_files(self.method_non_zero)
 
+    def test_ingredients_non_zero(self):
+        self.iterate_over_files(self.ingredients_non_zero)
+
     # implmentation of tests
+    def ingredients_non_zero(self,file):
+        self.distance_betwix_lines(file, '## Ingredients\n','## Notes\n')
+    
     def method_non_zero(self, file):
         self.distance_betwix_lines(file,'## Method\n','## Notes\n')
 
@@ -29,7 +35,7 @@ class RecipeTests(unittest.TestCase):
         self.does_file_contain_string(file, "## Ingredients\n")
 
     def title_matches_file_name(self, file):
-        first_line = firstLine = file.readline().rstrip()
+        first_line = file.readline().rstrip()
         expected_file_name = first_line[2:].lower().replace(' ','-') + '.md'
         print(expected_file_name)
         actual_file_name = os.path.basename(file.name)
@@ -84,6 +90,8 @@ class ScriptTests(unittest.TestCase):
             self.assertTrue("7734\n" in full_text, "File {} does not contain {}".format(file.name, "7734"))
 
             self.assertTrue("# Test File Please Ignore\n" in full_text, "File {} does not contain {}".format(file.name, "# Test File Please Ignore"))
+
+        os.remove(test_file)
 
 if __name__ == '__main__':
     unittest.main()

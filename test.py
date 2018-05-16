@@ -15,7 +15,13 @@ class RecipeTests(unittest.TestCase):
     def test_has_ingredients(self):
         self.iterate_over_files(self.has_ingredients)
 
+    def test_method_non_zero(self):
+        self.iterate_over_files(self.method_non_zero)
+
     # implmentation of tests
+    def method_non_zero(self, file):
+        self.distance_betwix_lines(file,'## Method\n','## Notes\n')
+
     def has_method(self, file):
         self.does_file_contain_string(file, "## Method\n")
 
@@ -35,6 +41,13 @@ class RecipeTests(unittest.TestCase):
         self.assertTrue(firstLine.startswith('# '), 'Title in file {} did not start with h1'.format(f.name))
 
     # helper functions
+    def distance_betwix_lines(self, file, firstLine, secondLine):
+        full_text = file.readlines()
+        a = full_text.index(firstLine)
+        b = full_text.index(secondLine)
+
+        self.assertTrue((b-a)>3,"File {} has empty field {}".format(file.name,firstLine))
+
     def iterate_over_files(self, test_assertion):
         directories = ['main','dessert','breakfast']
         for directory in directories:

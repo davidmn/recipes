@@ -2,6 +2,7 @@ language: python
 python:
   - "3.6"
 install:
-  - echo "hello world!"    
+  - "pip install pycodestyle"
 script:
   - python test.py
+  - pycodestyle *.py --ignore=E501
